@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="840" viewBox="0 0 900 840">
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#263445"/></marker><marker id="error" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#ae3642"/></marker></defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="25" font-family="Arial" font-size="18" font-weight="bold" fill="#172b4d">registrarSaida — código original</text>
+<polyline points="360,80 360,135" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="360.0" y="100.5" text-anchor="middle" font-family="Arial" font-size="11" fill="#263445">normal</text>
+<polyline points="255,55 105,55 105,785 255,785" fill="none" stroke="#ae3642" stroke-width="2" marker-end="url(#error)"/>
+<text x="180.0" y="48.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#ae3642">exceção propagada</text>
+<polyline points="360,185 360,240" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="360.0" y="205.5" text-anchor="middle" font-family="Arial" font-size="11" fill="#263445">sim</text>
+<polyline points="465,160 850,160 850,675 815,675" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="657.5" y="153.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#263445">não</text>
+<polyline points="360,290 360,340" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="360.0" y="308.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#263445">normal</text>
+<polyline points="465,265 580,265 580,340 605,340" fill="none" stroke="#ae3642" stroke-width="2" marker-end="url(#error)"/>
+<text x="522.5" y="258.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#ae3642">IOException</text>
+<polyline points="360,390 360,440" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="360.0" y="408.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#263445">normal</text>
+<polyline points="465,365 605,365" fill="none" stroke="#ae3642" stroke-width="2" marker-end="url(#error)"/>
+<text x="535.0" y="358.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#ae3642">IOException</text>
+<polyline points="360,490 360,540" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="360,590 360,760" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="710,390 710,650" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="710,700 710,735 465,735 465,785" fill="none" stroke="#263445" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="255" y="30" width="210" height="50" rx="9" fill="#eaf2fb" stroke="#326397" stroke-width="2"/>
+<text x="360" y="60" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">1. Entrada; consultarQuantidade</text>
+<rect x="255" y="135" width="210" height="50" rx="9" fill="#eaf2fb" stroke="#326397" stroke-width="2"/>
+<text x="360" y="165" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">2. quantidade &lt;= disponível?</text>
+<rect x="255" y="240" width="210" height="50" rx="9" fill="#eaf2fb" stroke="#326397" stroke-width="2"/>
+<text x="360" y="270" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">3. try; abrir FileWriter</text>
+<rect x="255" y="340" width="210" height="50" rx="9" fill="#eaf2fb" stroke="#326397" stroke-width="2"/>
+<text x="360" y="370" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">4. write(...)</text>
+<rect x="255" y="440" width="210" height="50" rx="9" fill="#eaf2fb" stroke="#326397" stroke-width="2"/>
+<text x="360" y="470" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">5. ultimaMovimentacao = codigo</text>
+<rect x="255" y="540" width="210" height="50" rx="9" fill="#eaf2fb" stroke="#326397" stroke-width="2"/>
+<text x="360" y="570" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">6. return true</text>
+<rect x="605" y="340" width="210" height="50" rx="9" fill="#fff1f2" stroke="#326397" stroke-width="2"/>
+<text x="710" y="370" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">7. catch IOException</text>
+<rect x="605" y="650" width="210" height="50" rx="9" fill="#eaf2fb" stroke="#326397" stroke-width="2"/>
+<text x="710" y="680" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">8. return false</text>
+<rect x="255" y="760" width="210" height="50" rx="9" fill="#fff1f2" stroke="#326397" stroke-width="2"/>
+<text x="360" y="790" text-anchor="middle" font-family="Arial" font-size="13" fill="#172b4d">9. Saída normal / abrupta</text>
+</svg>

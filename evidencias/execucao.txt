@@ -1,0 +1,29 @@
+Comando: python testes/executar.py
+Java e Python: versões locais; arquivos em diretórios temporários.
+O01 PASSOU | esperado=RET=7, ULTIMA='', arquivo=None | observado=['RET=7', 'ULTIMA='], arquivo=None
+O02 PASSOU | esperado=RET=0, ULTIMA='', arquivo=None | observado=['RET=0', 'ULTIMA='], arquivo=None
+O03 PASSOU | esperado=RET=0, ULTIMA='', arquivo=None | observado=['RET=0', 'ULTIMA='], arquivo=None
+O04 PASSOU | esperado=EX=NumberFormatException, ULTIMA='', arquivo=None | observado=['EX=NumberFormatException', 'ULTIMA='], arquivo=None
+O05 PASSOU | esperado=EX=ArrayIndexOutOfBoundsException, ULTIMA='', arquivo=None | observado=['EX=ArrayIndexOutOfBoundsException', 'ULTIMA='], arquivo=None
+O06 PASSOU | esperado=RET=true, ULTIMA='A', arquivo='' | observado=['RET=true', 'ULTIMA=A'], arquivo=''
+O07 PASSOU | esperado=RET=false, ULTIMA='', arquivo=None | observado=['RET=false', 'ULTIMA='], arquivo=None
+O08 PASSOU | esperado=RET=true, ULTIMA='A', arquivo='' | observado=['RET=true', 'ULTIMA=A'], arquivo=''
+O09 PASSOU | esperado=RET=false, ULTIMA='', arquivo=None | observado=['RET=false', 'ULTIMA='], arquivo=None
+O10 PASSOU | esperado=EX=NumberFormatException, ULTIMA='', arquivo=None | observado=['EX=NumberFormatException', 'ULTIMA='], arquivo=None
+O11 PASSOU | esperado=RET=true, ULTIMA='A', arquivo='' | observado=['RET=true', 'ULTIMA=A'], arquivo=''
+R01 PASSOU | esperado=RET=7, ULTIMA='', arquivo=None | observado=['RET=7', 'ULTIMA='], arquivo=None
+R02 PASSOU | esperado=RET=0, ULTIMA='', arquivo=None | observado=['RET=0', 'ULTIMA='], arquivo=None
+R03 PASSOU | esperado=EX=NoSuchFileException, ULTIMA='', arquivo=None | observado=['EX=NoSuchFileException', 'ULTIMA='], arquivo=None
+R04 PASSOU | esperado=EX=IOException, ULTIMA='', arquivo=None | observado=['EX=IOException', 'ULTIMA='], arquivo=None
+R05 PASSOU | esperado=EX=IOException, ULTIMA='', arquivo=None | observado=['EX=IOException', 'ULTIMA='], arquivo=None
+R06 PASSOU | esperado=RET=true, ULTIMA='A', arquivo='A;3\n' | observado=['RET=true', 'ULTIMA=A'], arquivo='A;3\n'
+R07 PASSOU | esperado=RET=false, ULTIMA='', arquivo=None | observado=['RET=false', 'ULTIMA='], arquivo=None
+R08 PASSOU | esperado=EX=IllegalArgumentException, ULTIMA='', arquivo=None | observado=['EX=IllegalArgumentException', 'ULTIMA='], arquivo=None
+R09 PASSOU | esperado=EX=IllegalArgumentException, ULTIMA='', arquivo=None | observado=['EX=IllegalArgumentException', 'ULTIMA='], arquivo=None
+R10 PASSOU | esperado=EX=AccessDeniedException|EX=FileSystemException, ULTIMA='', arquivo=None | observado=['EX=AccessDeniedException', 'ULTIMA='], arquivo=None
+R11 PASSOU | esperado=EX=IllegalArgumentException, ULTIMA='', arquivo=None | observado=['EX=IllegalArgumentException', 'ULTIMA='], arquivo=None
+R12 PASSOU | esperado=RET=true, ULTIMA='A', arquivo='A;7\n' | observado=['RET=true', 'ULTIMA=A'], arquivo='A;7\n'
+R13 PASSOU | esperado=EX=IOException, ULTIMA='', arquivo=None | observado=['EX=IOException', 'ULTIMA='], arquivo=None
+R14 PASSOU | esperado=EX=IOException, ULTIMA='', arquivo=None | observado=['EX=IOException', 'ULTIMA='], arquivo=None
+Total: 25/25 verificações de observação passaram.
+Observação: O03, O06, O08 e O11 reproduzem defeitos funcionais do original apesar de a observação passar.
