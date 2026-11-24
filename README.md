@@ -140,7 +140,7 @@ A estrutura do revisado mudou para validação explícita e fechamento automáti
 
 O revisado mantém `estoque.csv` como fonte imutável e apenas acrescenta movimentações. Assim, **não** implementa baixa transacional de estoque: saídas sucessivas ou processos simultâneos ainda podem superar o saldo. Para uso real, seria necessário definir a regra de saldo e gravar consulta e baixa atomicamente em armazenamento apropriado. O `synchronized` cobre uma única instância Java, não processos ou instâncias diferentes.
 
-O CSV aceito é deliberadamente simples: exatamente duas colunas separadas por `;`, sem escape ou cabeçalho; código duplicado usa a primeira ocorrência. O teste não simula falha durante `readLine` ou `write`. O plano está na aba exigida, mas não utiliza o layout do modelo da disciplina porque ele não foi fornecido. A publicação em GitHub e o envio na plataforma dependem das credenciais e da decisão de entrega do estudante; este diretório contém os arquivos preparados para isso.
+O CSV aceito é deliberadamente simples: exatamente duas colunas separadas por `;`, sem escape ou cabeçalho; código duplicado usa a primeira ocorrência. O teste não simula falha durante `readLine` ou `write`. O plano está na aba exigida, mas não utiliza o layout do modelo da disciplina porque ele não foi fornecido. O repositório está publicado em [MatheusVelosoDEV/atividade-caixa-branca](https://github.com/MatheusVelosoDEV/atividade-caixa-branca); o envio da URL e da planilha na plataforma da disciplina ainda deve ser feito pelo estudante.
 
 ## 8. Conclusão e referências
 
